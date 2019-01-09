@@ -3,9 +3,14 @@
 {% block content %}
     <div class="post-detail">
         {% if post.published_date %}
-            <div class="date"><strong>{{ post.published_date }}</strong></div>
+            <div class="date"><strong>{{ post.published_date }} <br> Автор: {{ post.author }}</strong></div>
         {% endif %}
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
+
     </div>
+    <div class="text-center">
+         <a class="btn btn-link" href="/" role="button">Назад</a>
+    </div>
+    
 {% endblock %}

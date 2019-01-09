@@ -9,6 +9,8 @@ body {
     background: url(/static/images/fon2.jpg);
     background-size: cover;
     background-color: #c7b39b;
+    font-family: Times New Roman;
+    font-size: 16px; 
 }
 
 .page {
@@ -62,7 +64,7 @@ body {
     margin-right: 15px;
 }
 
-.published, {
+.published {
     text-align: right;
     margin-right: 15px;
 }
