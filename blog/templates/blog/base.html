@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  <title>MyBlog</title>
+</head>
+<body>
+       
+<div class="page">
+
+        <div class="page-header">
+                <h1>My Django Blog</h1>
+        </div>
+        <div class="content">
+        {% block content %}
+        
+        {% endblock %}
+        </div>
+        <div class="page-footer">
+                <p class="inscription-footer">Разработал: Боровских К.О.<br>
+                Студент группы: АСУ-15-1-бз</p>
+                <p class="inscription-footer">e-mail:borovskih.kirill@rambler.ru</p>
+        </div>        
+</div>
+
+
+
+</body>
+</html>
